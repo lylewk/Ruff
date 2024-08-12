@@ -1,3 +1,28 @@
+#' @title Probability of getting observed AA, AB, and BB genotype
+#' frequencies if locus is in Hardy-Weinberg equilibrium
+#' @description As in the title.
+#' @details The object is called Table3_2 as it is Table 3.2 on page 59 of Mielke, Konigsberg,
+#' and Relethford (2011) and Table 3.3 page 56 of the 2006 edition.  The defaults values are
+#' from Mitchell et al. (1999).
+#' @param AA Integer giving count of AA genotype. Default=136
+#' @param AB Integer giving count of AB genotype. Default=66
+#' @param BB Integer giving count of BB genotype. Default=17
+#' @param stop Ending number of alleles. Default=50
+#' @return Returns the observed genotype counts, the expected values if the locus
+#' was in Hardy-Weinberg, and the probability value of getting the observed counts
+#' if the locus was in Hardy-Weinberg equilibrium.  It also shows graphically how
+#' the probability value was obtained.
+#' @references
+#' Mielke, James H., Konigsberg, Lyle W., and Relethford, John H. (2011)
+#' \emph{Human biological variation}, 2nd ed.  New York: Oxford University Press.
+#'
+#' Mielke, James H., Konigsberg, Lyle W., and Relethford, John H. (2006)
+#' \emph{Human biological variation}, 1st ed.  New York: Oxford University Press.
+#'
+#' Mitchell, R., Howlett, S., White, N., Federle, L., Papiha, S. S., Briceno, I.,
+#'  . . . Osipova, L. (1999). Deletion polymorphism in the human COL1A2 gene:
+#'  genetic evidence of a non-African population whose descendants spread to
+#'  all continents. \emph{Human Biology}, 901-914.
 #' @export
 Tab3_2=function (AA=136,AB=66,BB=17)
   {
