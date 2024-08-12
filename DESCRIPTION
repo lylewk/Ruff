@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Lyle W Konigsberg
 Maintainer: Lyle W Konigsberg <lylek@illinois.edu>
 Description: This package has the objects for doing Anth241 Homework
-Imports: scatterplot3d, ape, optiSel, abe
+Imports: scatterplot3d, ape, optiSel
 License: GPL
 Encoding: UTF-8
 LazyData: true
