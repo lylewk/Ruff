@@ -1,4 +1,5 @@
-#' @export
+#' Plot a coalescent tree
+#' @noRd
 plot_tree = function (phy,mut.rate=0,x.offset=0,muts=T)
 {
   N <- length(phy$tip.label)

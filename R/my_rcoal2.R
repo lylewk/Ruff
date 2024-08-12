@@ -1,4 +1,5 @@
-#' @export
+#' Coalescent model
+#' @noRd
 my_rcoal2 = function (n=20, curr.popsize=1000,old.popsize=1,when=10)
 {
   tip.label = NULL

@@ -1,4 +1,5 @@
-#' @export
+#' Finds depth of coalescent tree
+#' @noRd
 get_tree_depth = function (tree)
 {
   depth=0

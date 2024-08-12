@@ -1,3 +1,20 @@
+#' @title Temporal change in allele frequency given relative fitness values
+#' @description Shows effect of various selection regimes in a biallelic system.
+#' @details
+#' The object is called Fig3_9 as it is Figure 3.9 on page 71 of Mielke, Konigsberg,
+#' and Relethford (2011) and on page 67 of the 2006 edition where it is Figure 3.4.
+#' @param w Vector of three values giving the relative fitness for each genotype,
+#' AA, AB, and BB.  As these are relative fitness values, at least one value must
+#' be 1.0. Default = c(0.7635,1,0.0001)
+#' @param p.start A vector of starting allele frequencies.  If you use p.start=runif(100),
+#' you will get 100 random starting values. Default=c(0.0001,0.9999)
+#' @return Plot of allele frequencies across generations.
+#' @references
+#' Mielke, James H., Konigsberg, Lyle W., and Relethford, John H. (2011)
+#' \emph{Human biological variation}, 2nd ed.  New York: Oxford University Press.
+#'
+#' Mielke, James H., Konigsberg, Lyle W., and Relethford, John H. (2006)
+#' \emph{Human biological variation}, 1st ed.  New York: Oxford University Press.
 #' @export
 Fig3_9=function (w=c(0.7635,1,0.0001),p.start=c(0.0001,0.9999))
 {

@@ -1,3 +1,25 @@
+#' @title Deterministic simulation of genetic drift
+#' @description Shows histograms of number of A alleles at various generations across
+#' sub-populations where the number of A alleles are subject to genetic drift.
+#' @details
+#' The object is called Fig3_20 as it is Figure 3.20 on page 79 of Mielke, Konigsberg,
+#' and Relethford (2011) and on page 75 of the 2006 edition where it is Figure 3.15.
+#' The plot draws the deterministic histogram of sub-population A allele counts at
+#' various generations where these counts are subject to genetic drift because of
+#' finite sub-population size.  The plot always shows the allele count at generation
+#' 0 and then at the generations specified in "gen."  From the input "Nids" the script will
+#' ask how many of the 2xNids alleles you want to be A alleles at the "dawn of time."
+#' @param Nids An integer giving the population size for each sub-population. Default = 5
+#' @param gens A vector of four generations at which to view the histograms.
+#' Default=c(5,10,20,30)
+#' @return Plot of histograms of A allele counts at generation 0 and at five other
+#' generations specified in "gens".
+#' @references
+#' Mielke, James H., Konigsberg, Lyle W., and Relethford, John H. (2011)
+#' \emph{Human biological variation}, 2nd ed.  New York: Oxford University Press.
+#'
+#' Mielke, James H., Konigsberg, Lyle W., and Relethford, John H. (2006)
+#' \emph{Human biological variation}, 1st ed.  New York: Oxford University Press.
 #' @export
 Fig3_20=function (Nids=5,gens=c(5,10,20,30))
 {

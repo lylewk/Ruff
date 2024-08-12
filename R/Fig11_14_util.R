@@ -1,4 +1,6 @@
-#' @export
+#' Draw a rectangular cuboid
+#' @param ecc "eccentricity" of the cuboid.  When =1, is a cube
+#' @noRd
 Fig11_14_util = function(ecc=1)
 {
   library(scatterplot3d)

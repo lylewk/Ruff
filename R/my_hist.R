@@ -1,4 +1,6 @@
-#' @export
+#' Draw histogram for mismatch distribution
+#' @param y vector of counts
+#' @noRd
 my_hist = function (y)
 {
   n.rects=length(y)

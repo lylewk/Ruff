@@ -23,7 +23,8 @@ using Hardy-Weinberg equilibrium.  There are no parameters as the object prompts
 for the blood type counts. The suggested blood type counts are from Taylor and
 Prior (1938).  The object is called "P_56" as page 56 in Mielke, Konigsberg,
 and Relethford (2011) has an extremely abbreviated example using the Taylor and
-Prior (1938) data.
+Prior (1938) data.  Pages 52-53 (and Table 3.2) in the first edition (2006)
+of the text give a more detailed treatment of the EM algorithm.
 }
 \references{
 Taylor, G. L., & Prior, A. M. (1938). Blood groups in Britain II:
@@ -31,4 +32,7 @@ Distribution in the populations. \emph{Annals of Eugenics}, 8, 356-361.
 
 Mielke, James H., Konigsberg, Lyle W., and Relethford, John H. (2011)
 \emph{Human biological variation}, 2nd ed.  New York: Oxford University Press.
+
+Mielke, James H., Konigsberg, Lyle W., and Relethford, John H. (2006)
+\emph{Human biological variation}, 1st ed.  New York: Oxford University Press.
 }
