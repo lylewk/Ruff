@@ -61,7 +61,5 @@ make_ped2()
 
 ### Homework 1
 
-```{r echo=FALSE, warning=TRUE}
-knitr::include_graphics("images/Rabbit1.png")
-```
+![](images/Rabbit1.png)
 
