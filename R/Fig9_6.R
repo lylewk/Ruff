@@ -24,6 +24,7 @@
 Fig9_6 = function (popsize1=100,popsize2=1000)
 {
   library(ape)
+  set.seed(1234)
   tree1=my_rcoal2(n=20,popsize1,popsize1,0)
   depth1 = get_tree_depth(tree1)
   tree2=my_rcoal2(n=20,popsize2,popsize2,0)
