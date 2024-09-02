@@ -1,0 +1,126 @@
+---
+title: "Homework 2"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Homework 2}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r eval=F}
+# Always start your homework by copying and pasting the line below
+library(Anth241Hmwk)
+```
+
+In this assignment you will be examining how different population 
+parameters affect coalescence.  A broad hint: coalescence is another
+way of looking at genetic drift.  Small demes experience genetic drift
+more than large demes.  Similarly, small demes coalesce more quickly
+(i.e., reach the most recent common ancestor at a smaller tree depth)
+while larger demes coalesce more slowly (i.e., reach the most recent
+common ancestor at a greater tree depth).  You will also notice that
+coalescent events become "slower" (more rare) as you work up the tree
+following previous coalescent events.
+
+## 1. Size in static populations
+
+### Part A
+
+The following code will simulate two coalescent trees drawn on the
+same time scale.  Remember that deeper trees represent larger demes.
+
+```{r eval=FALSE}
+Fig9_6()
+
+```
+
+### Part B
+If you didn’t know which population was larger (right or left side
+plot), how could you figure this out from the plots that you just made?
+Using this device, which population was larger?  The one on the left or 
+the one on the right?
+
+### Part C
+If you changed the size of the second population to 10,000 instead of
+its default value of 1,000, what would you expect to happen to the plot?
+If you are uncertain, run the following code:
+
+```{r eval=FALSE}
+Fig9_6(100,10000)
+```
+
+## 2. Mismatch distributions
+
+The mismatch distribution is the distribution (well, that was redundant)
+of mutational differences between all pairs of individuals.  We can 
+simulate that by placing random mutations on the coalescent tree. 
+Because we assume a constant mutation rate and that all mutations are
+unique event polymorphisms, longer branches "see" more mutations.
+
+### Part A
+Run the Fig9_7 script and copy the tree and the mismatch distribution to
+your document.  Be sure that you copy both the tree and the mismatch 
+distribution to your homework.
+
+
+Warning: if you are using RStudio, the mismatch distribution will appear
+in a separate window and the tree will be in the lower right panel. You 
+may have to hunt around a bit for the window with the mismatch
+distribution.  On a Windows machine it may appear in the bottom ribbon.
+For a Mac I am not sure where that new window will appear. If you are
+using R, both plots will appear in a separate window with the mismatch
+distribution blocking the tree. Just drag the histogram window out of
+the way.
+
+```{r eval=FALSE}
+Fig9_7()
+```
+
+### Part B
+
+What is being compared to produce the mismatch distribution?
+
+### Part C
+
+What aspect of the tree causes the mismatch distribution to appear 
+“ragged”?
+
+## 3. Population expansion
+
+### Part A
+Run the script for a static (non-increasing) population: Fig9_12(1000,0)
+and for an expanding population: Fig9_12() and copy the trees and
+mismatch distributions to your document. Your run with the defaults
+(i.e., Fig9_12()) is doing an expanding population.
+
+```{r eval=FALSE}
+# Static population
+Fig9_12(1000,0)
+```
+
+Be sure to copy the tree and the mismatch distribution and paste to your
+document.  Be sure to close any open windows after this so that things
+do not get confusing.
+
+```{r eval=FALSE}
+# Expanding population
+Fig9_12()
+```
+
+### Part B
+Explain why the mismatch distribution for the expanding population no
+longer appears ragged.
+
+### Part C
+Explain how you could use the shape of the mismatch distribution to
+figure out if a population has experienced an expansion event in the
+past.  Note: you will see mismatch distributions and coalescent trees
+on you exam and be asked which ones are from static populations and
+which ones are from expanding populations.

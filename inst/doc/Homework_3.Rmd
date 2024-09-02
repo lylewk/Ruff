@@ -1,0 +1,108 @@
+---
+title: "Homework 3"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Homework 3}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r eval=F}
+# Always start your homework by copying and pasting the line below
+library(Anth241Hmwk)
+```
+In this assignment you will be looking at anthropometric variation.
+For each question you will run code to produce plots and then answer
+some follow-up questions. **Make sure** to read all the way to the end
+of each question to answer the follow-up questions.
+
+## 1. Growth trajectory
+
+### Part A
+
+Run the below code and copy/paste the resulting plot into your document.
+Note: The plot you are doing is called a "Preece-Baines" growth curve.
+This is a "distance curve" in that it is showing "how far" the kid has
+gotten in their stature ("standing height").
+
+```{r eval=FALSE}
+Fig11_07()
+```
+
+### Part B
+
+What is the approximate age of the adolescent growth spurt on this plot?
+How do you know? (Hint: it should be the age at which growth starts to
+accelerate).
+
+## 2. Growth Velocity
+
+### Part A
+
+Now we will get the velocity curve, or in other words the speed at which
+the kid is growing at any given age.  If you like calculus (most don't),
+then the velocity curve is the first derivative of the distance curve.
+Copy/paste the plot from this code to your document.
+
+```{r eval=FALSE}
+# warning! This will only work if you have already run Fig11_07
+Fig11_08() 
+```
+
+### Part B
+If you had two velocity curves, one for boys and one for girls, what is
+the primary way in which you would expect them to differ?  Recall when
+you were in grade school how girls generally got their adolescent growth
+spurt earlier than boys.
+
+## 3. Growth Acceleration
+
+### Part A
+
+Paste the resulting plot into your document.
+
+```{r eval=FALSE}
+Fig11_08b()
+```
+
+### Part B
+
+Explain how the timing of the adolescent growth spurt is related to
+adult height.
+
+## 4. Allen’s rule
+
+### Part A
+
+Run Fig11_14() and paste the resulting plot into your document.
+
+```{r eval=FALSE}
+Fig11_14()
+```
+
+### Part B
+
+How do these plots represent Allen’s Rule?
+
+### Part C
+Use Allen’s rule to explain how the environment of the first rabbit
+likely differs from that of the second rabbit:
+
+```{r echo=FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics(file.path(here::here(),"images","Rabbit1.png"))
+
+```
+
+
+```{r echo=FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics(file.path(here::here(),"images","Rabbit2.png"))
+
+```
+
