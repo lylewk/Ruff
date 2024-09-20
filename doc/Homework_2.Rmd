@@ -1,8 +1,8 @@
 ---
-title: "ANTH 241 Homework 2"
+title: "Homework 2"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Anth241Vignette}
+  %\VignetteIndexEntry{Homework 2}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

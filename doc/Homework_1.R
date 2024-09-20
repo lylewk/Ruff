@@ -59,7 +59,7 @@ knitr::opts_chunk$set(
 
 ## ----eval=FALSE---------------------------------------------------------------
 #  # Run me and copy/paste the plot to your document
-#  Fig3.9(c(1,.6,1),runif(100))
+#  Fig3_9(c(1,.6,1),runif(100))
 
 ## ----eval=FALSE---------------------------------------------------------------
 #  # Balanced polymorphism
