@@ -1,5 +1,5 @@
 ---
-title: "ANTH 241 Homework 1"
+title: "Homework 1"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Homework 1}
@@ -173,7 +173,7 @@ heterozygotes have a relative fitness greater than 0.0 but less than
 
 ```{r eval=FALSE}
 # Run me and copy/paste the plot to your document
-Fig3.9(c(1,.6,1),runif(100))
+Fig3_9(c(1,.6,1),runif(100))
 ```
 
 ### Part B
