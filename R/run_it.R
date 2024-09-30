@@ -62,6 +62,7 @@ bias=mean(out$est[grouped==3]-out$actual[grouped==3])
 cat('mean bias top quartile =  ',bias,'\n')
 cat('Top quartile ',sum(below[grouped==3]),sum(with.in[grouped==3]),
     sum(above[grouped==3]))
-cat('\n')
+cat('\n\n','All data\n')
 cat(sum(below),sum(with.in),sum(above))
+cat('\n')
 }
